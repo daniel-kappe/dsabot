@@ -1,0 +1,37 @@
+{
+  "name": "dsabot",
+  "version": "0.0.1",
+  "description": "A Discord bot to serve all DSA needs playing online via Discord",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "nodemon --exec babel-node ./src/server.js",
+    "build": "./node_modules/.bin/babel src --out-dir ./dist --source-maps",
+    "serve": "node ./dist/server.js",
+    "test": "./node_modules/.bin/mocha --require @babel/register 'test/*.test.js'"
+  },
+  "keywords": [
+    "discord",
+    "dsa",
+    "rpg",
+    "music"
+  ],
+  "author": "Daniel Kappe",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^12.5.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.7",
+    "@babel/core": "^7.12.7",
+    "@babel/node": "^7.12.6",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/plugin-transform-classes": "^7.12.1",
+    "@babel/plugin-transform-runtime": "^7.12.1",
+    "@babel/preset-env": "^7.12.7",
+    "@babel/register": "^7.12.1",
+    "@babel/runtime": "^7.12.5",
+    "chai": "^4.2.0",
+    "mocha": "^8.2.1"
+  }
+}
