@@ -2,7 +2,7 @@ import { expect, assert } from 'chai';
 import { D4, D6, D8, D10, D12, D20, D100 } from '../src/backend/dice';
 
 
-describe("Testing available dice set - D4", () => {
+describe.skip("Testing available dice set - D4", () => {
   it("does only roll integer values", () => {
     const numberRolls = 100;
     const rolls = D4.rollDice(numberRolls);
@@ -46,7 +46,7 @@ describe("Testing available dice set - D4", () => {
   });
 });
 
-describe("Testing available dice set - D6", () => {
+describe.skip("Testing available dice set - D6", () => {
   it("does only roll integer values", () => {
     const numberRolls = 1000;
     const rolls = D6.rollDice(numberRolls);
@@ -90,7 +90,7 @@ describe("Testing available dice set - D6", () => {
   });
 });
 
-describe("Testing available dice set - D8", () => {
+describe.skip("Testing available dice set - D8", () => {
   it("does only roll integer values", () => {
     const numberRolls = 1000;
     const rolls = D8.rollDice(numberRolls);
@@ -134,7 +134,7 @@ describe("Testing available dice set - D8", () => {
   });
 });
 
-describe("Testing available dice set - D10", () => {
+describe.skip("Testing available dice set - D10", () => {
   it("does only roll integer values", () => {
     const numberRolls = 100;
     const rolls = D10.rollDice(numberRolls);
@@ -178,7 +178,7 @@ describe("Testing available dice set - D10", () => {
   });
 });
 
-describe("Testing available dice set - D12", () => {
+describe.skip("Testing available dice set - D12", () => {
   it("does only roll integer values", () => {
     const numberRolls = 100;
     const rolls = D12.rollDice(numberRolls);
@@ -266,7 +266,7 @@ describe("Testing available dice set - D20", () => {
   });
 });
 
-describe("Testing available dice set - D100", () => {
+describe.skip("Testing available dice set - D100", () => {
   it("does only roll integer values", () => {
     const numberRolls = 1000;
     const rolls = D100.rollDice(numberRolls);

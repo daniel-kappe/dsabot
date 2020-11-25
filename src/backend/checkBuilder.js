@@ -1,6 +1,14 @@
 import { SkillCheck, AttributeCheck, AttackCheck } from './checks';
 
 class CheckBuilder {
+  trance = 0;
+  encumbered = 0;
+  drugged = 0;
+  confused = 0;
+  difficulty = 0;
+  frightend = 0;
+  pain = 0;
+
   constructor(attributes, skillLevel=null) {
     this.attributes = attributes;
     this.skillLevel = skillLevel;
@@ -121,9 +129,9 @@ export class SkillCheckBuilder extends CheckBuilder {
   }
 }
 
-class AttributeCheckBuilder extends CheckBuilder {
+export class AttributeCheckBuilder extends CheckBuilder {
   constructor(attribute) {
-    super([attributes]);
+    super([ attribute ]);
   }
 
   build() {
